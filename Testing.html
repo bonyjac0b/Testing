@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Baby Name Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Random Baby Name Generator</h1>
+        <div class="form-group">
+            <label for="gender">Select Gender:</label>
+            <select id="gender">
+                <option value="any">Any</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="length">Preferred Name Length:</label>
+            <input type="number" id="length" min="3" max="12" placeholder="3-12 characters">
+        </div>
+        <button id="generate" onclick="generateName()">Generate Name</button>
+        <h2 id="generated-name">Your Random Name: </h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
